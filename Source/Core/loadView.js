@@ -2,7 +2,7 @@
 define([
     'cesium/Widgets/getElement',
     'KnockoutES5',
-    'Core/createFragmentFromTemplate'
+    './createFragmentFromTemplate'
 ], function (
     getElement,
     Knockout,
