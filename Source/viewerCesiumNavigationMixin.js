@@ -3,7 +3,7 @@
  */
 /*global define*/
 define([
-    '../../cesium/Source/Core/Defined',
+    '../../cesium/Source/Core/defined',
     '../../cesium/Source/Core/DeveloperError',
     './CesiumNavigation'
     // 'require-less/less!Styles/cesium-navigation'
