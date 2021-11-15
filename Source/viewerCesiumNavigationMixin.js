@@ -5,7 +5,7 @@
 define([
     '../../cesium/Source/Core/defined',
     '../../cesium/Source/Core/DeveloperError',
-    './cesiumNavigation'
+    'cesium-navigation/Source/CesiumNavigation'
     // 'require-less/less!Styles/cesium-navigation'
 ], function(
     defined,
