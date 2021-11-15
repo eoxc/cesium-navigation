@@ -1,9 +1,9 @@
 /*global require*/
 define([
-    'cesium/Core/defined',
-    'cesium/Scene/Camera',
-    'cesium/Core/Rectangle',
-    'cesium/Core/Cartographic',
+    'cesium/Source/Core/defined',
+    'cesium/Source/Scene/Camera',
+    'cesium/Source/Core/Rectangle',
+    'cesium/Source/Core/Cartographic',
     'ViewModels/NavigationControl',
     'SvgPaths/svgReset'
 ], function (

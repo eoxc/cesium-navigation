@@ -3,9 +3,9 @@
  */
 /*global define*/
 define([
-    '../../cesium/Core/defined',
-    '../../cesium/Core/DeveloperError',
-    '../../cesiumNavigation'
+    '../../cesium/Source/Core/defined',
+    '../../cesium/Source/Core/DeveloperError',
+    './cesiumNavigation'
     // 'require-less/less!Styles/cesium-navigation'
 ], function(
     defined,

@@ -1,11 +1,11 @@
 /*global define*/
 define([
-    'cesium/Core/defined',
-    'cesium/Core/DeveloperError',
-    'cesium/Core/EllipsoidGeodesic',
-    'cesium/Core/Cartesian2',
-    'cesium/Core/getTimestamp',
-    'cesium/Core/EventHelper',
+    'cesium/Source/Core/defined',
+    'cesium/Source/Core/DeveloperError',
+    'cesium/Source/Core/EllipsoidGeodesic',
+    'cesium/Source/Core/Cartesian2',
+    'cesium/Source/Core/getTimestamp',
+    'cesium/Source/Core/EventHelper',
     'KnockoutES5',
     'Core/loadView'
 ], function (
