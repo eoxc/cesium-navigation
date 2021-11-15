@@ -1,8 +1,8 @@
 /*global define*/
 define([
-    'cesium/Source/Core/defined',
+    'cesium/Core/defined',
 //    'Cesium/Core/defaultValue',
-    'cesium/Source/Core/Event',
+    'cesium/Core/Event',
     'KnockoutES5',
     'Core/registerKnockoutBindings',
     'ViewModels/DistanceLegendViewModel',
