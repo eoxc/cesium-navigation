@@ -1,11 +1,11 @@
 /*global require*/
 define([
-    'Cesium/Core/defined',
-    'Cesium/Core/Ray',
-    'Cesium/Core/Cartesian3',
-    'Cesium/Core/Cartographic',
-    'Cesium/Core/ReferenceFrame',
-    'Cesium/Scene/SceneMode'
+    'cesium/Core/defined',
+    'cesium/Core/Ray',
+    'cesium/Core/Cartesian3',
+    'cesium/Core/Cartographic',
+    'cesium/Core/ReferenceFrame',
+    'cesium/Scene/SceneMode'
 ], function (
     defined,
     Ray,

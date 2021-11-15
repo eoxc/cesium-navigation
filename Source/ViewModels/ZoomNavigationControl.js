@@ -1,10 +1,10 @@
 /*global require*/
 define([
-    'Cesium/Core/defined',
-    'Cesium/Core/Ray',
-    'Cesium/Core/IntersectionTests',
-    'Cesium/Core/Cartesian3',
-    'Cesium/Scene/SceneMode',
+    'cesium/Core/defined',
+    'cesium/Core/Ray',
+    'cesium/Core/IntersectionTests',
+    'cesium/Core/Cartesian3',
+    'cesium/Scene/SceneMode',
     'ViewModels/NavigationControl',
     'Core/Utils'
 ], function (

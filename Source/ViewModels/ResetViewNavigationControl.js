@@ -1,9 +1,9 @@
 /*global require*/
 define([
-    'Cesium/Core/defined',
-    'Cesium/Scene/Camera',
-    'Cesium/Core/Rectangle',
-    'Cesium/Core/Cartographic',
+    'cesium/Core/defined',
+    'cesium/Scene/Camera',
+    'cesium/Core/Rectangle',
+    'cesium/Core/Cartographic',
     'ViewModels/NavigationControl',
     'SvgPaths/svgReset'
 ], function (
@@ -64,7 +64,7 @@ define([
     };
 
     ResetViewNavigationControl.prototype = Object.create(NavigationControl.prototype);
-    
+
      ResetViewNavigationControl.prototype.setNavigationLocked = function (locked)
     {
         this.navigationLocked = locked;
