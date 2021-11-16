@@ -4,9 +4,9 @@ define([
 //    'Cesium/Core/defaultValue',
     'cesium/Core/Event',
     'KnockoutES5',
-    '../Core/registerKnockoutBindings',
-    './DistanceLegendViewModel',
-    './NavigationViewModel'
+    './Core/registerKnockoutBindings',
+    './VieModels/DistanceLegendViewModel',
+    './VieModels/NavigationViewModel'
 ], function (
         defined,
 //    defaultValue,

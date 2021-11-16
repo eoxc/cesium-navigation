@@ -1,7 +1,7 @@
 /*global require*/
 define([
-    'markdown-it-sanitizer',
-    'markdown-it'
+    'markdownItSanitizer',
+    'markdownIt'
 ], function (
     MarkdownItSanitizer,
     MarkdownIt) {
