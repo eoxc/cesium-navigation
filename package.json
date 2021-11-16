@@ -11,7 +11,7 @@
         "knockout-es5": "^0.4.5",
         "markdown-it": "^12.2.0",
         "markdown-it-sanitizer": "^0.4.3",
-        "require-less": "^0.0.7"
+        "requirejs-less": "^0.1.6"
     },
     "devDependencies": {
         "cesium": "^1.67.0",
