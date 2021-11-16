@@ -7,7 +7,7 @@ define([
     'cesium/Core/getTimestamp',
     'cesium/Core/EventHelper',
     'KnockoutES5',
-    './loadView'
+    '../Core/loadView'
 ], function (
     defined,
     DeveloperError,
