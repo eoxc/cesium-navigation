@@ -6,12 +6,12 @@ define([
     'cesium/Core/defined',
     'cesium/Core/DeveloperError',
     './CesiumNavigation',
-    'requireLess/less!Styles/cesium-navigation'
+    // 'require-less/less!Styles/cesium-navigation'
 ], function(
     defined,
     DeveloperError,
     CesiumNavigation) {
-    'use strict';
+    // 'use strict';
 
     /**
      * A mixin which adds the Compass/Navigation widget to the Viewer widget.
