@@ -1,3 +1,6 @@
 var viewerCesiumNavigationMixin =require("cesium-navigation/Source/viewerCesiumNavigationMixin")
-import "./Styles/cesium-navigation.less";
-export default viewerCesiumNavigationMixin
+require("./Styles/cesium-navigation.less");
+module.exports ={
+    default: viewerCesiumNavigationMixin
+}
+// export default viewerCesiumNavigationMixin
