@@ -4,8 +4,8 @@ define([
     'cesium/Source/Scene/Camera',
     'cesium/Source/Core/Rectangle',
     'cesium/Source/Core/Cartographic',
-    'ViewModels/NavigationControl',
-    'SvgPaths/svgReset'
+    './NavigationControl',
+    './SvgPaths/svgReset'
 ], function (
         defined,
         Camera,

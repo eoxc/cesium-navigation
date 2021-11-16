@@ -12,13 +12,13 @@ define([
     'cesium/Core/BoundingSphere',
     'cesium/Core/HeadingPitchRange',
     'KnockoutES5',
-    'Core/loadView',
-    'ViewModels/ResetViewNavigationControl',
-    'ViewModels/ZoomNavigationControl',
-    'SvgPaths/svgCompassOuterRing',
-    'SvgPaths/svgCompassGyro',
-    'SvgPaths/svgCompassRotationMarker',
-    'Core/Utils'
+    '../Core/loadView',
+    './ResetViewNavigationControl',
+    './ZoomNavigationControl',
+    '../SvgPaths/svgCompassOuterRing',
+    '../SvgPaths/svgCompassGyro',
+    '../SvgPaths/svgCompassRotationMarker',
+    '../Core/Utils'
 ], function (
         defined,
         CesiumMath,

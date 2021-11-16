@@ -5,8 +5,8 @@ define([
     'cesium/Core/IntersectionTests',
     'cesium/Core/Cartesian3',
     'cesium/Scene/SceneMode',
-    'ViewModels/NavigationControl',
-    'Core/Utils'
+    './NavigationControl',
+    '../Core/Utils'
 ], function (
     defined,
     Ray,

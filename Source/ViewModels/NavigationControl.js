@@ -1,6 +1,6 @@
 /*global require*/
 define([
-    'ViewModels/UserInterfaceControl'
+    './UserInterfaceControl'
 ], function (
     UserInterfaceControl) {
     'use strict';
