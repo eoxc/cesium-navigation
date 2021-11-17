@@ -1,12 +1,12 @@
 /*global define*/
 define([
-    'Cesium/Core/defined',
+    'cesium/Core/defined',
 //    'Cesium/Core/defaultValue',
-    'Cesium/Core/Event',
+    'cesium/Core/Event',
     'KnockoutES5',
-    'Core/registerKnockoutBindings',
-    'ViewModels/DistanceLegendViewModel',
-    'ViewModels/NavigationViewModel'
+    './Core/registerKnockoutBindings',
+    './ViewModels/DistanceLegendViewModel',
+    './ViewModels/NavigationViewModel'
 ], function (
         defined,
 //    defaultValue,
@@ -38,14 +38,14 @@ define([
     CesiumNavigation.prototype.container = undefined;
     CesiumNavigation.prototype._onDestroyListeners = undefined;
     CesiumNavigation.prototype._navigationLocked = false;
-    
+
      CesiumNavigation.prototype.setNavigationLocked = function ( locked)
     {
         this._navigationLocked = locked;
         this.navigationViewModel.setNavigationLocked( this._navigationLocked );
-        
+
     };
-    
+
      CesiumNavigation.prototype.getNavigationLocked = function ()
     {
         return this._navigationLocked  ;
@@ -116,10 +116,10 @@ define([
         this.terria.afterWidgetChanged = new CesiumEvent();
         this.terria.beforeWidgetChanged = new CesiumEvent();
         this.container = container;
-        
+
         //this.navigationDiv.setAttribute("id", "navigationDiv");
-        
-           
+
+
           // Register custom Knockout.js bindings.  If you're not using the TerriaJS user interface, you can remove this.
         registerKnockoutBindings();
 
@@ -134,9 +134,9 @@ define([
                 mapElement: container,
                 enableDistanceLegend: true
             });
-           
+
         }
-     
+
 
         if ((!defined(this.terria.options.enableZoomControls) || this.terria.options.enableZoomControls) && (!defined(this.terria.options.enableCompass) || this.terria.options.enableCompass))
         {

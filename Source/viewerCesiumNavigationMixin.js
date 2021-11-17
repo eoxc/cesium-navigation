@@ -3,10 +3,10 @@
  */
 /*global define*/
 define([
-    'Cesium/Core/defined',
-    'Cesium/Core/DeveloperError',
-    'CesiumNavigation',
-    'require-less/less!Styles/cesium-navigation'
+    'cesium/Core/defined',
+    'cesium/Core/DeveloperError',
+    './CesiumNavigation',
+    // 'requirejs-less!Styles/cesium-navigation'
 ], function(
     defined,
     DeveloperError,
