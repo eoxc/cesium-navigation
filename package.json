@@ -4,14 +4,7 @@
     "description": "Cesium plugin that adds a compass, navigator, and distance scale to the map",
     "main": "viewerCesiumNavigationMixin",
     "dependencies": {
-        "almond": "0.3.3",
-        "bower": "*",
-        "hammerjs": "2.0.8",
-        "knockout": "^3.5.1",
-        "knockout-es5": "^0.4.5",
-        "markdown-it": "^12.2.0",
-        "markdown-it-sanitizer": "^0.4.3",
-        "requirejs-less": "^0.1.6"
+        "bower": "*"
     },
     "devDependencies": {
         "cesium": "^1.67.0",
