@@ -46,6 +46,7 @@ define([
     {
 
         this.terria = options.terria;
+        this.PanelOpen= this.terria.options.PanelOpen;
         this.eventHelper = new EventHelper();
         this.enableZoomControls = (defined(options.enableZoomControls)) ? options.enableZoomControls : true;
         this.enableCompass = (defined(options.enableCompass)) ? options.enableCompass : true;
@@ -150,9 +151,11 @@ define([
     NavigationViewModel.prototype.show = function (container)
     {
         var testing;
+        var initialCompassClass = this.PanelOpen ? '"compass compass-out"' : '"compass"'
+        var initialNavigationClass = this.PanelOpen ? '"navigation-controls navigation-out"' : '"navigation-controls"'
         if (this.enableZoomControls && this.enableCompass)
         {
-            testing = '<div class="compass" title="Drag outer ring: rotate view. ' +
+            testing = '<div class=' + initialCompassClass + 'title="Drag outer ring: rotate view. ' +
                     'Drag inner gyroscope: free orbit.' +
                     'Double-click: reset view.' +
                     'TIP: You can also free orbit by holding the CTRL key and dragging the map." data-bind="visible: showCompass, event: { mousedown: handleMouseDown, dblclick: handleDoubleClick }">' +
@@ -162,7 +165,7 @@ define([
                     ' <div class="compass-gyro-background"></div>' +
                     ' <div class="compass-gyro" data-bind="cesiumSvgPath: { path: svgCompassGyro, width: 145, height: 145 }, css: { \'compass-gyro-active\': isOrbiting }"></div>' +
                     '</div>' +
-                    '<div class="navigation-controls">' +
+                    '<div class=' + initialNavigationClass + '>' +
                     '<!-- ko foreach: controls -->' +
                     '<div data-bind="click: activate, attr: { title: $data.name }, css: $root.isLastControl($data) ? \'navigation-control-last\' : \'navigation-control\' ">' +
                     '   <!-- ko if: $data.hasText -->' +
@@ -177,7 +180,7 @@ define([
         }
         else if (!this.enableZoomControls && this.enableCompass)
         {
-            testing = '<div class="compass" title="Drag outer ring: rotate view. ' +
+            testing = '<div class=' + initialCompassClass + 'title="Drag outer ring: rotate view. ' +
                     'Drag inner gyroscope: free orbit.' +
                     'Double-click: reset view.' +
                     'TIP: You can also free orbit by holding the CTRL key and dragging the map." data-bind="visible: showCompass, event: { mousedown: handleMouseDown, dblclick: handleDoubleClick }">' +
@@ -187,7 +190,7 @@ define([
                     ' <div class="compass-gyro-background"></div>' +
                     ' <div class="compass-gyro" data-bind="cesiumSvgPath: { path: svgCompassGyro, width: 145, height: 145 }, css: { \'compass-gyro-active\': isOrbiting }"></div>' +
                     '</div>' +
-                    '<div class="navigation-controls"  style="display: none;" >' +
+                    '<div class=' + initialNavigationClass + '  style="display: none;" >' +
                     '<!-- ko foreach: controls -->' +
                     '<div data-bind="click: activate, attr: { title: $data.name }, css: $root.isLastControl($data) ? \'navigation-control-last\' : \'navigation-control\' ">' +
                     '   <!-- ko if: $data.hasText -->' +
@@ -202,7 +205,7 @@ define([
         }
         else if (this.enableZoomControls && !this.enableCompass)
         {
-            testing = '<div class="compass"  style="display: none;" title="Drag outer ring: rotate view. ' +
+            testing = '<div class=' + initialCompassClass + 'style="display: none;" title="Drag outer ring: rotate view. ' +
                     'Drag inner gyroscope: free orbit.' +
                     'Double-click: reset view.' +
                     'TIP: You can also free orbit by holding the CTRL key and dragging the map." data-bind="visible: showCompass, event: { mousedown: handleMouseDown, dblclick: handleDoubleClick }">' +
@@ -212,7 +215,7 @@ define([
                     ' <div class="compass-gyro-background"></div>' +
                     ' <div class="compass-gyro" data-bind="cesiumSvgPath: { path: svgCompassGyro, width: 145, height: 145 }, css: { \'compass-gyro-active\': isOrbiting }"></div>' +
                     '</div>' +
-                    '<div class="navigation-controls"    >' +
+                    '<div class=' + initialNavigationClass + '    >' +
                     '<!-- ko foreach: controls -->' +
                     '<div data-bind="click: activate, attr: { title: $data.name }, css: $root.isLastControl($data) ? \'navigation-control-last\' : \'navigation-control\' ">' +
                     '   <!-- ko if: $data.hasText -->' +
@@ -227,7 +230,7 @@ define([
         }
         else if (!this.enableZoomControls && !this.enableCompass)
         {
-            testing = '<div class="compass"  style="display: none;" title="Drag outer ring: rotate view. ' +
+            testing = '<div class=' + initialCompassClass + 'style="display: none;" title="Drag outer ring: rotate view. ' +
                     'Drag inner gyroscope: free orbit.' +
                     'Double-click: reset view.' +
                     'TIP: You can also free orbit by holding the CTRL key and dragging the map." data-bind="visible: showCompass, event: { mousedown: handleMouseDown, dblclick: handleDoubleClick }">' +
@@ -237,7 +240,7 @@ define([
                     ' <div class="compass-gyro-background"></div>' +
                     ' <div class="compass-gyro" data-bind="cesiumSvgPath: { path: svgCompassGyro, width: 145, height: 145 }, css: { \'compass-gyro-active\': isOrbiting }"></div>' +
                     '</div>' +
-                    '<div class="navigation-controls"   style="display: none;" >' +
+                    '<div class=' + initialNavigationClass + '   style="display: none;" >' +
                     '<!-- ko foreach: controls -->' +
                     '<div data-bind="click: activate, attr: { title: $data.name }, css: $root.isLastControl($data) ? \'navigation-control-last\' : \'navigation-control\' ">' +
                     '   <!-- ko if: $data.hasText -->' +
