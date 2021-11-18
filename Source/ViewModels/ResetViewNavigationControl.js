@@ -4,6 +4,7 @@ define([
     'cesium/Scene/Camera',
     'cesium/Core/Rectangle',
     'cesium/Core/Cartographic',
+    'cesium/Core/Cartesian3',
     './NavigationControl',
     '../SvgPaths/svgReset'
 ], function (
@@ -11,6 +12,7 @@ define([
         Camera,
         Rectangle,
         Cartographic,
+        Cartesian,
         NavigationControl,
         svgReset)
 {
@@ -105,6 +107,11 @@ define([
                 {
                     camera.flyTo({
                         destination: scene.globe.ellipsoid.cartographicToCartesian(this.terria.options.defaultResetView)
+                    });
+                }else if (this.terria.options.defaultResetView && this.terria.options.defaultResetView instanceof Cartesian)
+                {
+                    camera.flyTo({
+                        destination: this.terria.options.defaultResetView
                     });
                 }
                 else if (this.terria.options.defaultResetView && this.terria.options.defaultResetView instanceof Rectangle)
