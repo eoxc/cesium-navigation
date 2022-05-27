@@ -4,12 +4,12 @@
   "description": "Cesium plugin that adds a compass, navigator, and distance scale to the map",
   "main": "viewerCesiumNavigationMixin",
   "dependencies": {
-    "@bower_components/almond": "jrburke/almond#^0.3.2",
-    "@bower_components/hammerjs": "EightMedia/hammer.js#^2.0.8",
-    "@bower_components/knockout": "SteveSanderson/knockout#^3.4.0",
-    "@bower_components/knockout-es5": "SteveSanderson/knockout-es5#^0.4.4",
-    "@bower_components/markdown-it": "markdown-it/markdown-it#^7.0.0",
-    "@bower_components/markdown-it-sanitizer": "svbergerem/markdown-it-sanitizer#^0.4.1",
+    "@bower_components/almond": "jrburke/almond#0.3.3",
+    "@bower_components/hammerjs": "EightMedia/hammer.js#2.0.8",
+    "@bower_components/knockout": "SteveSanderson/knockout#3.5.1",
+    "@bower_components/knockout-es5": "SteveSanderson/knockout-es5#0.4.6",
+    "@bower_components/markdown-it": "markdown-it/markdown-it#7.0.1",
+    "@bower_components/markdown-it-sanitizer": "svbergerem/markdown-it-sanitizer#0.4.3",
     "@bower_components/require-css": "https://github.com/guybedford/require-css.git#214fadff4f9f5c650ebc5256e6fd88e9c602b010",
     "@bower_components/require-less": "https://github.com/guybedford/require-less.git#447f0d270d91616eb83b14efe26d953b10d9b33f"
   },

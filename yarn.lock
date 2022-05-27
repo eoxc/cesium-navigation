@@ -2,29 +2,29 @@
 # yarn lockfile v1
 
 
-"@bower_components/almond@jrburke/almond#^0.3.2":
+"@bower_components/almond@jrburke/almond#0.3.3":
   version "0.3.3"
   resolved "https://codeload.github.com/jrburke/almond/tar.gz/2d7f08eb6caf26628ba9172650000fdef0145b26"
 
-"@bower_components/hammerjs@EightMedia/hammer.js#^2.0.8":
+"@bower_components/hammerjs@EightMedia/hammer.js#2.0.8":
   version "2.0.8"
   resolved "https://codeload.github.com/EightMedia/hammer.js/tar.gz/49731688380a91be07653ee2491ab48ece7952b5"
 
-"@bower_components/knockout-es5@SteveSanderson/knockout-es5#^0.4.4":
+"@bower_components/knockout-es5@SteveSanderson/knockout-es5#0.4.6":
   version "0.4.6"
   resolved "https://codeload.github.com/SteveSanderson/knockout-es5/tar.gz/4dda30e420d1f0fe27417eb4ff756a0c39430768"
   dependencies:
     weakmap "0.0.6"
 
-"@bower_components/knockout@SteveSanderson/knockout#^3.4.0":
+"@bower_components/knockout@SteveSanderson/knockout#3.5.1":
   version "3.5.1"
   resolved "https://codeload.github.com/SteveSanderson/knockout/tar.gz/aad712123b2a9f5373d2eeb71cd63227fe5c7bd8"
 
-"@bower_components/markdown-it-sanitizer@svbergerem/markdown-it-sanitizer#^0.4.1":
+"@bower_components/markdown-it-sanitizer@svbergerem/markdown-it-sanitizer#0.4.3":
   version "0.4.3"
   resolved "https://codeload.github.com/svbergerem/markdown-it-sanitizer/tar.gz/6efc1722b9f776d2b052a099323870ba1bc299ef"
 
-"@bower_components/markdown-it@markdown-it/markdown-it#^7.0.0":
+"@bower_components/markdown-it@markdown-it/markdown-it#7.0.1":
   version "7.0.1"
   resolved "https://codeload.github.com/markdown-it/markdown-it/tar.gz/c3f619c19a0b76abcd288e621a69099a72a5ee26"
   dependencies:
